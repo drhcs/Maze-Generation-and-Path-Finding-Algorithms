@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Maze</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+
+<style>
+</style>
+
+<head>
+</head>
+
+<body onload="createGrid()">
+
+  <div id="controls" style="z-index:2; position:absolute; padding-left:50px; padding-top:1px;">
+    <button type="button" onclick="generatePrims()" style="height:18px">Generate</button>
+    <button type="button" onclick="generateEmpty()" style="height:18px">Clear</button>
+    <button type="button" onclick="dfs()" style="height:18px; ">DFS</button>
+    <button type="button" onclick="bfs()" style="height:18px">BFS</button>
+    <button type="button" onclick="dijkstras()" style="height:18px">Dijkstra</button>
+    <button type="button" onclick="aStar()" style="height:18px">A-Star</button>
+  </div>
+
+  <div id="maze" style="position:absolute;">
+  </div>
+
+  <script src="Maze.js">
+  </script>
+
+</body>
+
+</html>
